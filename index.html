@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        /* Estilos para o footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        li{
+            padding:5px ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Aprender a Programar</h1>
+    </header>
+    <nav>
+        <!---LINKS-->
+        <a href="#materias">Começar</a>
+        <a href="#feedback">Feedback</a>
+        <a href="squad.html">Equipe</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="container" id="materias">
+        <h2>Materias:</h2>
+        <!-- Conteúdo sobre cursos aqui -->
+        <ul>
+            <li>Aprender Python:</li>
+            <ul>
+                <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Curso em Vídeo</a></li>
+                <li><a href="https://www.w3schools.com/java/default.asp" target="_blank">W3Schools</a></li>
+                <li><a href="https://docs.python.org/3/" target="_blank">Documentação Oficial do Python</a></li>
+                <li><a href="https://www.udemy.com/courses/search/?src=ukw&q=Python" target="_blank">Udemy</a></li>
+            </ul>
+            <li>Aprender Java:</li>
+            <ul>
+                <li><a href="https://www.w3schools.com/java/default.asp" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Curso em Vídeo</a></li>
+                <li><a href="https://docs.oracle.com/en/java/" target="_blank">Documentação Oficial do Java</a></li>
+                <li><a href="https://www.udemy.com/courses/search/?src=ukw&q=Java" target="_blank">Udemy</a></li>
+            </ul>
+            <li>Aprender C++</li>
+            <ul>
+                <li><a href="https://learn.microsoft.com/pt-br/cpp/?view=msvc-170" target="_blank">Documentação Oficial do C++</a></li>
+                <li><a href="https://www.w3schools.com/cpp/default.asp" target="_blank">W3Schools</a></li>
+            </ul>
+            <li>Aprender C</li>
+            <ul>
+                <li><a href="https://www.w3schools.com/c/index.php" target="_blank">W3Schools</a></li>
+            </ul>
+            <li>Aprender PHP</li>
+            <ul>
+                <li><a href="https://www.w3schools.com/php/default.asp" target="_blank">W3Schools</a></li>
+            </ul>
+            <li>Aprender TypeScript</li>
+            <ul>
+                <li><a href="https://www.w3schools.com/typescript/index.php" target="_blank">W3Schools</a></li>
+            </ul>
+            <li>Aprender JavaScript</li>
+            <ul>
+                <li><a href="https://www.w3schools.com/js/default.asp" target="_blank" >W3Schools</a></li>
+                <li><a href="https://www.udemy.com/courses/search/?src=ukw&q=Javascript" target="_blank">Udemy</a></li>
+            </ul>
+        </ul>
+    </div>
+    <div class="container" id="feedback">
+        <h2>Dê seu Feedback</h2>
+        <form>
+            <label for="firstName">Primeiro Nome:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Sobrenome:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <footer>
+        &copy; 2023 DS.7 - Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
