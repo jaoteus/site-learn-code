@@ -10,6 +10,7 @@
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
+           
         }
         h1{
             text-align: center;
@@ -17,7 +18,7 @@
         }
         h2{
             margin: 30px;
-            text-align: left;
+            text-align: center;
         }
         header {
             background-color: #375576;
@@ -26,34 +27,51 @@
             padding: 20px 0;
         }
         th,td {
-            text-align: center;
             border:1px solid black;
-            margin: 50px;
+
+
         }
         nav{
             margin: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         table{
-            margin: 50px;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            text-align: center;
+            
         }
         .button{
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            font-size:15px;
+            font-family:Arial;
+            width:80px;  
+            height:30px;
+            border-width:1px;
+            color:#fff;
+            border-color:#4e6096;
+            border-top-left-radius:8px;
+            border-top-right-radius:8px;
+            border-bottom-left-radius:8px;
+            border-bottom-right-radius:8px;
+            box-shadow: 0px 0px 0px 2px #9fb4f2;
+            text-shadow: 0px 1px 0px #283966;
+            background:linear-gradient(rgb(120, 146, 194), #476e9e);
         }
-        .text-button{
-            color: #fff;
-            text-decoration: none;
-        }
+        .button:hover {
+            background: linear-gradient(#468ccf, #63b8ee);
+}
+            
         .container{
             width: 700px;
             margin-top: 3%;
             margin-left: auto;
             margin-right: auto;
             border: 1px solid black;
+           
+  
         }
     </style>
 </head>
@@ -62,7 +80,7 @@
         <h1>Equipe</h1>
     </header>
     <div class="container">
-        <h2>Nossa equipe é formada por 4 pessoas:</h1>
+        <h2>Nossa equipe é formada por 4 pessoas:</h2>
         <div class="table">
             <table>
                 <tr>
@@ -88,7 +106,7 @@
             </table>
         </div>
         <nav>
-            <a class="text-button" href="index.html"><button class="button">Voltar</button></a>
+            <a href="index.html"><button class="button">Voltar</button></a>
         </nav>
     </div>
 </body>
